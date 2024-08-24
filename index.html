@@ -8,8 +8,22 @@
   <body>
     <h1>If you see this page, test was sucessful!</h1>
     <br /><br />
-    <button id="on">test bttn 1</button>
-    <br />
-    <button id="off">test bttn 2</button>
+    <button id="on">ON</button>
+    <button id="off">OFF</button>
   </body>
+  <script>
+    const on = document.getElementById("on");
+    const off = document.getElementById("off");
+
+    on.addEventListener('click', function(){
+      fetch('http://192.168.1.75/x=1')
+      console.log('abc');
+    })
+
+    off.addEventListener('click', function(){
+      fetch('http://192.168.1.75/x=0')
+      console.log('abc');
+    })
+
+  </script>
 </html>
