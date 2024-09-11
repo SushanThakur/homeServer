@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Run Script with Node.js</title>
+    <script>
+      function runScript(action) {
+        const endpoint = action === "ON" ? "/run-on-script" : "/run-off-script";
+
+        fetch(endpoint, {
+          method: "POST",
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            // alert(data);
+          })
+          .catch((error) => {
+            // alert("Error: " + error);
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Run a Script on Raspberry Pi</h1>
+    <button onclick="runScript('ON')">ON</button>
+    <button onclick="runScript('OFF')">OFF</button>
+  </body>
+</html>

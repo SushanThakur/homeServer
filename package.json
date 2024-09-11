@@ -19,5 +19,6 @@
   "homepage": "https://github.com/SushanThakur/homeServer#readme",
   "dependencies": {
     "express": "^4.20.0"
-  }
+  },
+  "devDependencies": {}
 }
