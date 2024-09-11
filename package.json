@@ -1,0 +1,23 @@
+{
+  "name": "local-home-server",
+  "version": "1.0.0",
+  "description": "This is the source code for a webserver that runs locally on my home server and is available to public through Cloudflare Tunneling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SushanThakur/homeServer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SushanThakur/homeServer/issues"
+  },
+  "homepage": "https://github.com/SushanThakur/homeServer#readme",
+  "dependencies": {
+    "express": "^4.20.0"
+  }
+}
