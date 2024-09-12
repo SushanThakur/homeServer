@@ -33,6 +33,9 @@ void loop() {
   if(client){
     String line="";
     int i = 0;
+    if(client.connected()){
+      Serial.println("Client Connected");
+    }
     while(client.connected()){
       if(client.available()){
         char c = client.read();
